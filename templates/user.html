@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>Hello {{ name }}</h1>
+	{% for i in lista %}
+		{{ i }}<br/>
+	{% endfor %}
+
+	<br/>
+	<br/>
+	<h2>{{ lista.0 }}</h2>
+
+	{% if name == "Pablo" %}
+		<h1>Tu nombre es Pablo</h1>
+	{% else %}
+		<h1>Tu nombre es feo</h1>
+	{% endif %}
+{% endblock %}

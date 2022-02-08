@@ -1,0 +1,294 @@
+{% extends "temas/base2.html" %}
+
+	{% block title %}Tema 2 - fisio{% endblock %}
+
+{% block indice %}
+<li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">Tema 1</label>
+	<ul class="interior">
+		<li><a href="#a000">Introducción</a></li>
+    	<li><a href="#a001">Dolor de origen gastrointestinal</a></li>
+    	<li><a href="#a002">Causas neumológicas</a></li>
+    	<li><a href="#a003">Dolor de origen cardiovascular</a></li>
+    	<li><a href="#a004">Causas neuromusculares</a></li>
+    	<li><a href="#a005">Causas psicosomáticas</a></li>
+    	<li><a href="#a006">Extras</a></li>
+	</ul>
+</li>
+<li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">Tema 2</label>
+	<ul class="interior">
+		<li><a href="#r">Nivel 2</a></li>
+		<li><input type="checkbox" name="list" id="nivel2-3"><label for="nivel2-3">Nivel 2</label>
+			<ul class="interior">
+				<li><a href="#r">Nivel 3</a></li>
+				<li><a href="#r">Nivel 3</a></li>
+			</ul>
+		</li>
+	</ul>
+</li>
+{% endblock %}
+		{% block content %}
+		<div class="main-div">
+			<div id="intro-container" class="body-containers">
+				<h1><strong>Tema 2: cronobiología y el papel de la melatonina en el control de los ritmos circadianos</strong></h1>
+				<div>
+					<blockquote>Un ritmo biológico hace referencia a la oscilación de un parámetro biológico dependiente de un <b>reloj endógeno</b> y de <b>sincronizadores ambientales</b>.</blockquote>
+					<ul>
+						<li>Nuestro reloj biológico está en el núcleo supraquiasmático, regulando los picos hormonales en función de la información que recibe por la retina</li>
+						<li>se encuentra <b>sincronizado con el medio ambiente</b> por medio de la <b>luz</b> --es el estímulo, el <b>ZEITGEBER</b>--, y necesita ponerse en hora cada 24 horas</li>
+						<div class="aside">Una <b>lesión</b> en el <b>núcleo supraquiasmático</b> produce <b>arritmicidad</b></div>
+					</ul>
+					<div class="aside">A partir de las 9 de la noche, ocurre resistencia a la insulina. Por eso se recomienda no cenar tan tarde, pudiendo a largo plazo inducir un síndrome metabólico</div>
+				</div>
+			</div>
+			<div id="body-container" class="body-containers">
+				<div>
+					<h3>Reloj biológico</h3>
+					<ul>
+						<li>En los mamíferos, se situa en el <b>NSQ</b></li>
+						<li>El <b>marcapasos circadiano</b> se <b>sincroniza</b> periódicamente gracias a determinados estímulos --<b>zeitgebers</b> <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="450" height="450" src="{{ url_for('static', filename='img/fisio3/zeitgebers.png') }}"></div></div></i>--, que en nuestro caso es el <b>ciclo luz-oscuridad</b></li>
+						<li>La retina es el puente entre el ambiente y el NSQ --recientemente se ha demostrado la presencia de unas células ganglionares específicas con capacidad fotosensitiva directa gracias a la presencia de el pigmento <b>melanopsina</b>, responsable de la transmisión directa de info a los NSQ.</li>
+						<li>Los NSQ difunden su señal rítmica al resto del organismo mediante la actuación de intermediarios humorales --melatonina, EGF o TGF-alpha--.</li>
+						<li><b>Todas las células tienen relojes biológicos, pero a ellas no les llega el estímulo de la luz directamente. Estas se ponen a 0 periódicamente gracias a la señal de melatonina enviada por el NSQ</b>. Son los <b>RELOJES PERIFÉRICOS</b></li>
+						<div class="aside">  <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="750" height="400" src="{{ url_for('static', filename='img/fisio3/melatonina-serotonina.png') }}"></div></div></i> Luz- retina- NSQ- cuerpo pineal- melatonina- sincronización de relojes biológicos periféricos</div>
+						<blockquote><small>Ej de cambio de ritmo:
+							<ul>
+								<li><b>Jet lag</b>: cambio de ritmo temporal</li>
+								<li><b>Cambios horarios invierno-verano</b> --afectan especialmente a personas con patología previa.</li>
+							</ul></small>
+						</blockquote>
+					</ul>
+				</div>
+				<div>
+					<h3>Ritmos endocrinos <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="450" height="450" src="{{ url_for('static', filename='img/fisio3/hormonas.jpg') }}"></div></div></i></h3>
+					<p>Casi todas las hormonas tienen su <b>ritmo diario de concentración en plasma</b>, existiendo determinados picos:
+						<ul>
+							<li><b>Hormona del crecimiento</b>:un fenómeno de cronodisrupción en un niño puede suponer un freno en el crecimiento del niño</li>
+							<li><b>Cortisol</b></li>
+							<li><b>Potasio urinario</b></li>
+							<li><b>Melatonina</b>: presenta un pico entre las 2-3 de la mañana --esto no quiere decir que todas las funciones se den en ese momento--, poniendo en hora todos los relojes de nuestro cuerpo.
+								<div class="aside">el despertar es inverso a la concentración de melatonina: los niveles son mínimos durante el día y máximos durante la noche</div></li>
+						</ul>
+						<aside>La <b>melatonina</b> produce <b>hipotermia</b>: el patrón de la temperatura es inverso al de la melatonina <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="650" height="400" src="{{ url_for('static', filename='img/fisio3/hormonas3.jpg') }}"></div></div></i></aside></p>
+						<br>
+						<p>Como vimos en el tema anterior, las funciones de las hormonas varían en función de su concentración.
+							<div class="aside"><aside>
+								<ol>Ej. del ciclo ovárico:
+									<li>Un aumento de <b>estrógenos</b> aumenta la proliferación celular en el endometrio</li>
+									<li>Un pico de <b>FSH y LH</b> cambia la función, rompiendo el folículo ovárico</li>
+									<li>La <b>progesterona</b> empieza a subir en la segunda etapa, apareciendo la fase secretora del endometrio</li>
+								</ol>
+							</aside></div>
+						</p>
+					</p>
+					<h3>Fases del sueño <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="550" height="350" src="{{ url_for('static', filename='img/fisio3/fases_sueño.jpg') }}"></div></div></i></h3>
+					<ol><h5>4 fases:</h5>
+						<li><b>Fase 1</b>: bajo voltaje y frecuencia mixta. Se incluye el <b>sueño REM</b></li>
+						<li><b>Fase 2</b></li>
+						<li><b>Fase 3</b>: ondas lentas</li>
+						<li><b>Fase 4</b>: ondas lentas. Se incluye el <b>sueño no REM</b></li>
+					</ol>
+					<ol><h5>Ondas:</h5>
+						<li><b>Beta</b>: estado de alerta, despiertos</li>
+						<li><b>Alpha</b>: depiertos, pero en estado de relajación --desarrollar memoria, creatividad e intuición</li>
+						<li><b>Zeta</b>: meditaciones profundas</li>
+						<li><b>Delta</b>: coincide con el sueño más profundo y reparador</li>
+					</ol>
+					<ol><h5>Dos etapas:</h5>
+						<li><b>Sueño profundo</b>: la primera, de cuatro horas. Es las <b>más importante</b>, determinando la <b>calidad de nuestro descanso</b></li>
+						<li><b>Sueño superficial</b>: la segunda, de cuatro horas</li>
+					</ol>
+					<div class="aside">Durante el sueño, los <B>espacios intersticiales</B> cerebrales <b>amentan</b>, haciendo que aumente el flujo cefalorraquídeo y se produzca un lavado, <b>aclaramiento de metabolitos tóxicos</b> acumulados.</div>
+					<br>
+					<h3 align="center">Sleep: the brain housekeeper?</h3>
+					<br>
+					<h5>Alteraciones del sueño y sus efectos negativos</h5>
+					<p>Hábitos como cenar tarde o recibir luz artifical de pantallas a la hora de acostarse evitan la limpieza del SNC. Con el tiempo, esto puede desencadenar patologías: obesidad, diabetes tipo 2 y Alzheimer (considerada como la diabetes tipo 3).<br>
+						Durante el envejecimiento, las alteraciones del sueño se vuelven mucho más frecuentes.<br>
+					Asía como la falta de sueño produce patologías, esta a su vez puede venir provocada por problemas mayores:
+					<ul>
+						<li>Disrupción de ritmos circadianos</li>
+						<li>Efectos cerebrales</li>
+						<li>Riesgo de cáncer</li>
+						<li>Efectos reproductivos</li>
+						<li>Efectos cardiovasculares</li>
+						<li>Salud mental</li>
+					</ul></p>
+				</div>
+				<div>
+					<h3><i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="650" height="400" src="{{ url_for('static', filename='img/fisio3/molecula_melatonina.jpg') }}"></div></div></i> Melatonina</h3>
+					<ul>
+						<li>Señal del organismo para poner a 0 los relojes celulares</li>
+						<li>Molécula muy conservada a lo largo de la evolución --esto indica su importancia</li>
+						<aside>La <b>luz</b> incide en la <b>retina</b>, la info llega al <b>NSQ</b>; este conecta con los <b>ganglios cervicales superiores</b> por medio de la médula espinal; interactuan con el <b>pinealocito</b> por medio de la <b>vía polisináptica</b>. Todo esto ocurre de manera que cuando hay luz, se inhibe la liberación de NA, por lo que no se produce melatonina.</aside>
+						<aside>La <b>NA</b> <b>estimula la síntesis de melatonina</b>.</aside>
+						<div class="aside">Por tanto, los <b>beta-bloqueantes</b> inhiben la síntesis de melatonina, así como la luz tambien bloquea la transmisión.</div>
+						<div class="aside">Las personas invidentes tienen un retraso de 25h de fase de melatonina</div>
+					</ul>
+					<h5>Producción de melatonina</h5>
+					<dl>
+						<dt>Melatonina pineal</dt>
+						<dd>se genera a <b>bajas dosis (<1nM en suero)</b>, con <b>efecto cronobiótico</b> --es decir, controla y regula los ritmos.</dd>
+						<dt>Melatonina extrapineal</dt>
+						<dd>se genera a altas dosis, y tiene efecto antioxidante y antiinflamatorio. Tambien presenta efectos genómicos en el control de la homeostasis mitocondrial.<br>
+						Prácticamente todas las células del organismo producen melatonina, y a concentraciones mayores de las que lo hace el cuerpo pineal.</dd>
+						<blockquote><small>*La síntesis de melatonina disminuye con la edad (principalmente a partir de los 40 años).</small></blockquote>
+						<div class="aside">La melatonina extrapineal no sale a plasma: se queda dentro de la célula donde se genera</div>
+					</dl>
+					<h5>Cascada antioxidante de la melatonina</h5>
+					<p>La <b>melatonina</b> se metaboliza por la <b>2,3-dioxigenasa</b> a <b>AFMK y AMK</b>, siendo estos <b>metabolitos activos</b> que siguen depurando radicales libres. Por tanto, <b>sus propios metabolitos tienen efecto antioxidante</b></p>
+					<h5>Efecto antioxidante</h5>
+					<p>La melatonina es un potente antioxidante ya que elimina radicales libres a través de una cascada antioxidante. Además, activa la expresíon de <b>enzimas antioxidantes</b> como deshidrogenasas flavoproteínas, oxidasas e hidrolasas. <br>
+						Con respecto a la <b>vit C</b>, este elimina el e<sup>-</sup> desapareado, pero se convierte en otro radical libre. Esto significa que un exceso de ingesta de vit C puede llevarnos a un estado <b>pro-oxidante</b>.</p>
+					<h5>Efecto anti-inflamatorio de la melatonina</h5>
+					<ul>
+						<li>La melatonina inhibe la vía de <b>NF-KB</b>
+							<div class="aside">NF-KB es un factor de transcripción unido a una proteína inhibidora. Cuando se activa, se trasloca al núcleo, donde induce la expresión de genes relacionados con la reacción inflamatoria, como factores pro-inflamatorios IL-1B y TNF-alpha. Se activa ante infección bacteriana o viral, y exceso de radicales libres.</div></li>
+						<li>Inhibe la vía del <b>inflamasoma</b>.
+							<div class="aside">El inflamasoma es un complejo multiproteico inactivo en el citosol. Cuando se activa, induce a la caspasa-1, que convierte procitokinas del citosol --producidas en la vía de NF-KB-- en su <b>forma activa</b>. <br>
+							EL componente <b>NLRP3</b> del inflamasoma se activa cuando hay daño mitocondrial: salen radicales libres que activan al inflamasoma y citocromo C que activa la vía de la apoptosis.</div></li>
+					</ul>
+					<div class="aside">Cuando existe un proceso inflamatorio muy potente, como ocurre en la sepsis o en el covid, el problema es la <b>inflamación descontrolada</b> que eleva mucho la concentración de citokinas, las cuales a su vez tienen un sistema de <b>retroalimentación positiva</b>.</div>
+					<h5><i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="850" height="450" src="{{ url_for('static', filename='img/fisio3/beneficio_melatonina.png') }}"></div></div></i> Efecto protector mitocondrial</h5>
+					<p>La mitocondria está formada por una doble membrana, siendo la <b>membrana interna impermeable</b> --solo entran agua, NO y gases--.<br>
+						Cuando hay más radicales libres en el interior de la mitocondria, se dañan los complejos de la cadena respiratoria, lo que se resume en menos ATP, causando muerte celular por apoptosis o necrosis. <br>
+					La melatonina entra en la mitocondria --esta tambien produce su propia melatonina--, actuando como un <b>agente protector</b>:
+					<ul>
+						<li><b>elimina radicales libres</b></li>
+						<li><b>aumenta</b> la <b>expresión</b> de proteínas de la <b>cadena respiratoria</b></li>
+						<li><b>inhibe el exceso de NO, iNOS</b> (que a altas concentraciones inhibe el proceso de la cascada respiratoria)</li>
+						<li>Aumenta, por tanto, la bioenergética mitocondrial e inhibe la muerte celular --ya sea por apoptosis o por necrosis.</li>
+						<div class="aside">Todo esto se refleja en un mejor funcionamiento de la célula, mayor síntesis proteica, mejora del metabolismo celular...</div>
+					</ul>
+					</p>
+					<div class="aside">La piel de los mamíferos contiene toda la maquinaria molecular y bioquímica necesaria para transformar el L-triptófano en melatonina --encontrándose en los 3 estratos de la piel.<br>
+						En 1959 el dermatólogo Arnold Lemer <b>determinó la estrutura de la melatonina</b> --quería aclarar la piel de las personas, y para ello extrajo 2 microgramos de 250000 vacas.</div>
+				</div>
+				<div>
+					<h5>Síntesis y metabolismo</h5>
+					<div class="aside">Triptófano => serotonina => N-acetilserotonina => melatonina<br>
+					<ul>En el proceso intervienen dos enzimas:
+						<li>N-acetiltransferasa (NAT)</li>
+						<li>Hidroxilindol-O-metiltransferasa (HOMT)</li>
+					</ul>
+					<aside>*La <b>adrenalina</b> regula estos dos enzimas, regulando así la síntesis de melatonina.</aside></div>
+
+					<ol><h5>Efectos positivos de la melatonina sobre la piel</h5>
+						<li>Reduce el envejecimiento de la piel --reduce la apoptosis y los procesos oxidantes.</li>
+						<li>Reduce el eritema causado por rayos UV</li>
+						<li>Estimula la proliferación celular para mejorar la cicatrización de heridas</li>
+						<li>Reduce la fragilidad de la piel</li>
+						<li>Reduce el vitíligo y el desarrollo de cáncer</li>
+						<li>Actúa en la mitocondria apra mantener su integridad reduciendo el estrés</li>
+					</ol>
+					<h5>Melatonina y cáncer</h5>
+					<p>Previene de los efectos adversos de la quimio y de la radioterapia. Tiene un efecto dual:
+						<ul>
+							<li>En la célula sana inhibe la apoptosis y estimula la proliferación celular, pero aumenta la apoptosis e inhibe la proliferación en células tumorales</li>
+							<li>Aumenta la función mitocondrial, causando muerte celular en células tumorales, puesto que estas presentan un metabolismo anaeróbico</li>
+						</ul></p>
+					<h5>Melatonina y mucositis</h5>
+					<blockquote>La oromucositis radioinducida supone uno de los principales problemas de la terapia en los pacientes con cáncer. uede afectar a la cavidad oral y a todo el tracto intestinal, causando un gran dolor en el paciente, impidiéndole incluso comer y beebr.<br>
+						Las úlceras de la mucositis se generan por ´pérdida de mitocondrias dañadas durante la radiación, por lo que el efecto protector de la melatonina --suministrada a estos pacientes-- protege las mitocondrias y ayuda a revertir el efecto nocivo del tratamiento.<br>
+					Siguiendo esta línea, se ha desarrollado una crema de melatonina para prevenir y tratar la radiodermatitis producida por la irradiación.
+					<div class="aside">La melatonina <b>NO cura enfermedades</b>   como el cámcer o el párkinson: palia con la sintomatología por su efecto antiinflamatorio, o la previene.</div></blockquote>
+					<h5>Melatonina y relojes celulares</h5>
+					<p>El NSQ no sincroniza directamente a todo el organismo, sino que las células cuentan con genes reloj.
+						<div class="aside">Esto fue descubierto por los investigadores Michael Rosbash y Michael W. Young (premio Nobel de 2017)</div>
+					</p>
+					<h5><i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="800" height="550" src="{{ url_for('static', filename='img/fisio3/bmail_clock.png') }}"></div></div></i> Genes reloj:</h5>
+					<ol>
+						<li>CLOCK y BMAIL: inductores de la transcripción de genes con funciones celulares y responsables de la expresión de los genes PER y CRY</li>
+						<li>PER y CRY: inhiben a BMAIL</li>
+						<div class="aside">CLOCK es un gen constitutivo</div>
+					</ol>
+					<p>La señal de melatonina induce la expresión de BMAIL, que aumenta su concentración en el citosol y se dimeriza con CLOCK.
+						<br>
+						CLOCK y BMAIL se traslocan al núcleo e inducen la expresión de genes de síntesis de glucógeno, insulina, regulación del riñón, intestino, higado, etc.<br>
+						EL dímero CLOCK-BMAIL regula la expresión de estos genes a lo largo de 24h, debido a la activación y desactivación por parte del heterodímero PER-CRY y de la melatonina.<br>
+						Por otro lado, el dímero CLOCK-BMAIL induce la expresión de los genes PER y CRY, aumentando su concentración en el citosol hasta que se dimerizan y traslocan al núcleo, inhibiendo al dímero CLOCK-BMAIL por retroalimentación negativa. Sin embargo, a las 24h PER y CRY se degradan, permitiendo que el ciclo empiece de nuevo.<br>
+						<b>Todo esto ocurre cada 24h, iniciándose el ciclo con la señal de melatonina</b>
+						<div class="aside">Las proteína cuya síntesis es inducida por el dímero CLOCK-BMAIL son las responsables de los ritmos de nuestro orgnanismo.<br>
+						Estos genes reloj actúan en todas las células salvo en los espermatozoides y células tumorales.</div></p>
+						<br>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/DHpCBmq_z60?start=30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<br>
+				<div>
+					<h3>La importancia de respetar nuestro cronotipo <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="700" height="550" src="{{ url_for('static', filename='img/fisio3/cronotipo_tipos.jpg') }}"></div></div></i></h3>
+					<p>El ciclo luz-oscuridad regula el ciclo de los genes. Pero podemos encontra varios cronotipos:
+						<ol>
+							<li><b>Cronotipo intermedio</b>: el pico de melatonina ocurre entre las 2-3 de la mañana, y a las 8 los niveles son mínimos. La persona tiene una máxima actividad durante el día</li>
+							<li><b>Cronotipo vespertino</b>: el pico de melatonina se da hacia las 6 de la mañana. Estas personas tienen más energía por la noche y les cuesta más irse a descansar.</li>
+							<li><b>Cronotipo matutino</b>: el pico de melatonina   se da sobre las 8 de la tarde. En este caso, las personas se sienten más cansadas al terminar la tarde, y se despiertan antes</li>
+							<div class="aside">La <b>ausencia de luz</b> y <b>corrientes electromagnéticas</b>, así como la <b>tranquilidad</b>, son factores muy importantes a la hora de determinar la <b>calidad del sueño</b>.<br>
+								Las luces inhiben la liberación de melatonina, así como las radiaciones electromagnéticas. Someternos de manera constante a su exposición nos puede llevar a la <b>cronodisrupción</b>.<br>
+							La GH se libera durante el sueño profundo, por lo que si no descansamos, no crecemos.</div>
+						</ol>
+					</p>
+					<h5>Funciones que se ponen en marcha de acuerdo conla sincronización del reloj biológico:</h5>
+					<ol>
+						<li>A las 8 de la mañana se da un pico de cortisol --hiperglucemiante--, fundamental para que la glucosa se distribuya por todo el organismo y tengamos energía en ayunas</li>
+						<li>Máxima secreción de insulina a las 10, para prepararnos para comer</li>
+						<li>Entre las 3-4 de la tarde aumenta la glucolisis y la captación de ácidos grasos</li>
+						<li>Entre las 4-6 aumenta la síntesis de glucógeno, colesteral, formación de bilis y lipogénesis</li>
+					</ol>
+					<div class="aside">Cuando hay alteración en el cronotipo individual, comienzan los problemas: resistencia a la insulina, disminución de la secreción de insulina, aumento del metabolismo oxidativo, menor número de enzimas digestivas y mayor cantidad de radicales libres que llevan a patologías metabólicas (obesidad, hepatitis, diabetes tipo 2, etc.). <br>
+					Un ejemplo de estas alteraciones es cenar a las 10 de la noche teniendo un conotipo intermedio.</div>
+					<ol>Toda esta sincronización de los ritmos se relaciona con patologías espontáneas:
+						<li>Partos espontáneos</li>
+						<li>Crisis asmáticas</li>
+						<li>Alergias, rinitis --mala regulación del sistema inmune--</li>
+						<li>Síntomas de artritis</li>
+						<li>Infarto cerebral y miocárdico</li>
+						<li>Hematocrito, ácido úrico</li>
+						<li>Flujo urinario</li>
+						<li>Riesgo de hemorragia cerebral</li>
+						<li>Adrenalina, aumenta a primera hora de la tarde</li>
+						<li>Reactividad cutánea a histaminas y antígenos</li>
+					</ol>
+				</div>
+			</div>
+			<div id="foot-container" class="body-containers">
+				<div>
+					<p>La sincronización de los ritmos biológicos es fundamental para evitar patologías a nivel metabólico y a nivel de reparación del organismo.</p>
+					<p>Es importante llevar una rutina, sincronizando nuestros ritmos. Por eso se producen patologías si vamos en contra de nuestro propio cronotipo, genéticamente determinado.</p>
+				</div>
+				<div class="aside">Lo que modifica los relojes celulares, son los picos de melatonina, es decir, su concentración. Si la crema de melatonina pasa a circulación, puede causar modificaciones en los ritmos.</div>
+				<div class="aside">¿La cronodisrupción produce alteración en las concentraciones hormonales? No, va a provocar una alteración del ritmo de las hormonas. Es decir, los picos van a aparecer en horas en las que no les corresponde.</div>
+				<div class="aside">El cronotipo es genético.</div>
+				<div class="aside">La luz roja es la única que no inhibe a la melatonina</div>
+				<div class="aside">¿Los beta-bloqueantes podrían producir alteraciones del sueño? Si, porque inhiben la liberación de NA, responsable directa de la síntesis de melatonina.</div>
+			</div>
+		</div>
+	
+	{% endblock %}
+	{% block java %}
+	<script type="text/javascript">
+		var x = document.getElementById("indice")
+		var y = document.getElementById("glosario")
+		var z = document.getElementById("btn")
+		var w = document.getElementById("key_words")
+		
+		function indice(){
+			x.style.left="0px";
+			y.style.left="450px";
+			z.style.left="-8px";
+			w.style.left="900px";
+		}
+		function glosario(){
+			x.style.left="-400px";
+			y.style.left="0px";
+			z.style.left="60px";
+			w.style.left="450px";
+		}
+		function key_words(){
+			x.style.left="-800px";
+			y.style.left="-400px";
+			z.style.left="140px";
+			w.style.left="0px";
+		}
+	</script>
+	{% endblock %}
+	
+	{% block footer %}
+	{% endblock %}

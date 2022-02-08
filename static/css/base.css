@@ -1,0 +1,140 @@
+header{
+	font-family:'Lexend Mega', sans-serif;
+	font-weight: 100;
+	font-size: 20px;
+	width: 100%
+}
+/*
+div{
+	width: 45%;
+	display: inline-block;
+	padding: 20px;
+	background: #bbb;
+}
+h1{
+	font-size: 24px
+}
+.caja2{
+	background: #ddd;
+}
+@media only screen and (max-width: 600px){
+div{
+	display: block;
+	width: 100%;
+}
+h1{
+	font-size: 25px !important
+}
+}*/
+.nav_responsive-ul{
+	display: none;
+}
+nav{
+	background-color: #240b36
+}
+.nav_li{
+	margin-left: 20px;
+	padding: 9px;
+	display: inline-block;
+	color: #fff;
+}
+.nav_li a{
+	text-decoration: none;
+	background: #240b36;
+	color: #fff;
+}
+.nav_li a:hover{
+	color: #ccc;
+}
+.nav_li:hover{
+	color: #ccc;
+}
+.nav_li i{
+	box-sizing: border-box;
+	margin-right: 10px
+}
+
+
+@media only screen and (max-width: 1015px) {
+	.nav_ul {
+		display: none
+	}
+	.nav{
+		height: 37px;
+		width: 100%;
+	}
+	.nav_responsive-ul {
+		display: block;
+		position: absolute;
+		width: 100%;
+		margin-top: 64px;
+		height: 0px;
+	}
+	.nav_li-container{
+		position: relative;
+		top: -1000px;
+		height: calc(100vh-64px);
+		background: #9bf;
+		width: 100%;
+		transition: all 1s;
+		z-index: 1;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.nav_responsive-li{
+		width: 100%;
+		padding: 9px 20px;
+	}
+	.nav_responsive-li a{
+		text-decoration: none;
+		background: #9bf;
+		
+	}
+	.nav_responsive-li i{
+		box-sizing: border-box;
+		text-align: right;
+		margin-right: 10px;
+		width: 30px;
+		color: #016
+	}
+	.nav_responsive-li:hover{
+	color: red;
+	}
+	.nav_responsive-li a:hover{
+	color: red;
+	}
+	.nav_responsive-li a{
+		color: #016;
+		text-decoration: none;
+	}
+	.nav_responsive-ul:hover > .nav_li-container{
+		top: -27px;
+	}
+}
+.nav_responsive-button-container{
+	position: absolute;
+	width: 100%;
+	font-size: 25px;
+	background: #69c;
+	margin-top: -64px;
+	z-index: 100;
+}
+.nav_responsive-button{
+	text-align: right;
+	width: 100%;
+	font-size: 25px;
+	padding: 12px 20px;
+	height: 50px
+}
+
+.flex_container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-item{
+	background: #248;
+	color: #fff;
+	padding: 10px;
+	margin: 10px
+	
+}

@@ -1,0 +1,245 @@
+{% extends "temas/base2.html" %}
+
+	{% block title %}Tema 3 - bases{% endblock %}
+
+{% block indice %}
+<li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">Tema 1</label>
+	<ul class="interior">
+		<li><a href="#a000">Introducción</a></li>
+    	<li><a href="#a001">Dolor de origen gastrointestinal</a></li>
+    	<li><a href="#a002">Causas neumológicas</a></li>
+    	<li><a href="#a003">Dolor de origen cardiovascular</a></li>
+    	<li><a href="#a004">Causas neuromusculares</a></li>
+    	<li><a href="#a005">Causas psicosomáticas</a></li>
+    	<li><a href="#a006">Extras</a></li>
+	</ul>
+</li>
+<li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">Tema 2</label>
+	<ul class="interior">
+		<li><a href="#r">Nivel 2</a></li>
+		<li><input type="checkbox" name="list" id="nivel2-3"><label for="nivel2-3">Nivel 2</label>
+			<ul class="interior">
+				<li><a href="#r">Nivel 3</a></li>
+				<li><a href="#r">Nivel 3</a></li>
+			</ul>
+		</li>
+	</ul>
+</li>
+{% endblock %}
+		{% block content %}
+		<div class="main-div">
+			<div id="intro-container" class="body-containers">
+				<h1><strong>Tema 3: Eje neuroendocrino</strong></h1>
+				<div>
+					<p>La hipófisis pesa alrededor de 1 gramo, situada bajo el <b>hipotálamo</b> y conectada al mismo por el <b>tallo hipofisiario</b>. Se considera <b>la glándula más importante del organismo</b>.<br>
+					La hipósifis se divide en: 
+					<ul>
+						<li><b>Adenohipófisis o hipófisis glandular o hipófisis anterior</b>: se divide en pars tuberalis, pars distalis y pars intermedia.</li>
+						<li><b>Neurohipófisis o hipófisis posterior</b>: pars nerviosa y tallo infundibular</li>
+					</ul>
+					</p>
+					<h5>Hipotálamo</h5>
+					<p>El hipotálamo se situa en la <b>parte más baja del diencéfalo</b>. Sus neuronas se agrupan formando <b>2 grupos</b>: <b>sistema magnocelular</b> y <b>sistema parvocelular</b>.
+						<br>
+						<dl>
+							<dt>Sistema magnocelular</dt>
+							<dd>Incluye a los <b>núcleos supraótico y paraventricular</b>. Son <b>neuronas de gran tamaño</b> cuyos axones se proyectan hacia la neurohipófisis.<br>
+								Sus hormonas pasan a la red capilar situada en la neurohipófisis --estas no se almacenan, sino que se sintetizan y pasan a sangre--: <b>ADH y oxitocina</b></dd>
+							<dt>Núcleo parvocelular</dt>
+							<dd>Incluye los <b>núcleos paraventricular, arcuato y preóptico medial</b>. Está formado por <b>neuronas pequeñas</b> que proyectan sus axones a la eminencia media del hipotálamo. Allí pasan al rico sistema vascular a travñes del cual los factores llegan a la adenohipófisis.<br>
+								Estos factores hipotalámicos <b>estimulan</b> o <b>inhiben</b> la <b>liberación de hormonas</b> de la adenohipófisis.</dd>
+						</dl>
+					</p>
+					<h5>Sistema porta-hipofisiario</h5>
+					<p>Toda la red que une todos estos sistema es lo que se conoce como <b>sistema porta-hipofisiario</b> --la unión vascular entre la <abbr title="lugar donde el sistema parvocelular libera sus factores">eminencia media</abbr> y la neurohipófisis.</p>
+					<p>El sistema porta-hipofisiario consiste en dos plexos capilares que conectan a través de vasos o venas porta.
+						<ul>
+							<li><b>Arteria hipofisiaria superior</b>: forma el plexo capilar primario y mediante venas portales desemboca en el plexo capilar secundario.</li>
+							<li><b>Arteria hipofisiaria inferior</b>: da lugar al plexo capilar de la neurohipófisis</li>
+						</ul></p>
+					<p>Todas las <b>hormonas adenohipofisiarias están controladas por el hipotálamo</b>: las neuronas hipotalámicas secretan factores reguladores hipotalámicos que llegan a la hipófisis para regular su secreción.<br>
+					<div class="aside">La eminencia media recoge los factores del sistema parvocelular para dirigirlos a la adenohipófisis. También es el lugar de paso para las neuronas del sistema magnocelular que llegan a la neurohipófisis.</div>
+					Por tanto, el hipotálamo es una <b>estrutura cerebral fundamental</b> para la vida, ya que permite la <b>conservación de la homeostasis</b> y <b>coordina las funciones endocrinas</b> que permiten la supervivencia.</p>
+
+					<h5>Control de la secreción de hormonas hipotalámicas <i class="fa fa-image"><div class="foto"><div class="foto-background"><img width="450" height="575" src="{{ url_for('static', filename='img/fisio4/eje_hipotalamo-hipofisisario.jpg') }}"></div></div></i></h5>
+					<p>La <b>secreción</b> de hormonas hipotalámicas está <b>regulada</b> por el <b>cerebro</b>. Los <b>estímulos extrínsecos e intrínsecos</b> son conducidos hasta el cerebro a través de rutas neuronales, donde se va a estimular o inhibir la secreción de factores hipotalámicos, inervando a las células productoras de <b>hormonas hipofisotrópicas</b>.
+						<div class="aside">Ej. El frío es estimulador extrínseco de la liberación de TSH. El cambio de osmolaridad es un factor intrínseco qye estimula la liberación de hormona antidurética.</div></p>
+					<p>En la conducción de la información sensorial intervienen <b>neurotransmisores</b> --tenemos de todo tipo: monoaminas(NA, ADR, Ach, serotonia, DA); aminoácidos (Glu, Gly, GABA); etc.-- que van a llevar a cabo la <b>transmisión sináptica</b></p>
+
+					<h5>Sistema magnocelular</h5>
+					<p>Neuronas de gran tamañon que van a liberar <b>ADH y oxitocina</b>, proyectando sus axones <b>directamente</b> sobre la <b>neurohipófisis</b>.</p>
+					<h5>Sistema parvocelular</h5>
+					<p>Neuronas de menor tamaño que proyectan sus axones sobre la eminencia media, donde liberan factores hipotalámicos para la adenohipófisis, que se transportan por el sistema-porta.</p>
+					<ul><b>
+						<li>Células tirotropas => TRH => <abbr title="tirotropina o estimulante del tiroides">TSH</abbr> (hormonas tiroideas)</li>
+						<br>
+						<li>Células corticotropas => CRH => <abbr title="adrenocortitropa">ACTH</abbr> (regula la glándula suprarrenal estimulando la liberación de <B>cortisol</B>)</li>
+						<br>
+						<li>Células gonadotropas => gen GnRH (factor liberador de gonadotropinas) => <b>FSH y LH</b> (estimulación de las gónadas femeninas y masculinas)</li>
+						<br>
+						<li>Células lactotropas => PRL
+							<div class="aside">Su producción <b>está inhibida por la dopamina</b>.<br>
+							Un aumento de TRH superior a los niveles fisiológicos estimula también la liberación de prolactina</div></li>
+						<li>Células somatotropas => GHRH => <abbr title="hormona del crecimiento">GH</abbr>
+							<div class="aside">La somatostatina frena la liberación de GH</div></li>
+					</ul></b>
+					<div class="aside">Todas estas hormonas se regulan por medio de <b>retroalimentación negativa</b>. Hay una excepción: en el ciclo ovárico ocurre un cambio fisiológico hacia la regulación por retroalimentación positiva de los estrógenos.<br>
+					Frío- TRH- TSH- tiroides- aumento de hormonas tiroideas- aumento en plasma- inhibición del hipotálamo por retroalimentación negativa</div>
+					<p>Control de la CTH: estímulo: CRH --se libera por estrés-- pasa a neurohipófisis, de ahi se libera ASTH, pasa a sangre, </p>
+				</div>
+			</div>
+			<div id="body-container" class="body-containers">
+				<h3>Regulación del eje hipotálamo hipofisiario</h3>
+				<div class="flex_container">
+					<div class="flex_items">
+						<h5>Control del tiroides: <b>TSH</b></h5>
+						<ul>
+							<li>Factor hipotalámico: <b>TRH</b></li>
+							<li>Factor adenohipofisiario: <b>TSH</b></li>
+							<li>Tiroides: se estimula la <b>liberacióm de hormonas tiroideas</b>, con una regulación de <b>retroalimentación negativa</b> sobre la TRH y TSH</li>
+							<div class="aside">La <b>somatostatina</b> inhibe a la TSH</div>
+						</ul>
+					</div>
+					<div class="flex_items">
+						<h5>Control de hormonas suprarrenales: <b>ACTh</b></h5>
+						<ul>
+							<li>Hipotálamo: <b>CRH</b>; La vasopresina(ADH) regula positivamente a la ACTH y, por tanto, al cortisol</li>
+							<li>Adenohipófisis: <b>ACTH</b></li>
+							<li>Glándula suprarrenal: cortisol, con una <b>retroalimentación negativa</b> sobre CRH.</li>
+							<div class="aside">Los corticoides --antiinflamatorios-- inhiben a la <b>Il-1beta</b> de los linfocitos, la cual <b>estimula la CRH</b></div>
+						</ul>
+						<blockquote>&nbsp&nbsp&nbsp&nbsp EL <b>estrés</b> es el <b>factor más importante</b> para liberar <b>CRH</b> y <b>aumentar el cortisol</b>. Además, cuanto más estrés haya, habrá <b>mayor retención de líquido</b> por aumento de la hormona antidiurética <b>(ADH y VP)</b>.<br>
+						&nbsp&nbsp&nbsp&nbspSi el estrés es muy alto, <b>su efecto es superior a la retroalimentación negativa</b> de los glucocorticoides. Por tanto, si predomina el estrés, siguen aumentando los corticoides</blockquote>
+					</div>
+					<div class="flex_items">
+						<h5>Control de la GH</h5>
+						<ul>
+							<li>Hipotálamo: <b>GHRH</b> estimula; <b>Somatostatina</b> inhibe <small>--los nieveles de GH dependen de este equilibrio--</small></li>
+							<li>Adenohipófisis: <b>GH</b> estimula linfocitos, árbol alveolar mamario, tejidos somáticos (hígado, huesos, músculo). Se activan los <b>factores de crecimiento IGF-I, II</b> que inhiben la secreción de GH y GHRH mediante <b>retroalimentación negativa</b></li>
+						</ul>
+					</div>
+					<div class="flex_items">
+						<h5>Contro de las gónadas: FSH</h5>
+						<ul>
+							<li>Hipotálamo: <b>gen LHRH</b></li>
+							<li>Adeohipófisis: <b>FSH</b>: <ul>
+								<li>en el ovario estimula el <b>desarrollo del folículo ovárico y la liberación de estrógenos</b>, que inhiben mediante <b>retroalimentación negativa</b> al gen LHRH --aunque a mitad del ciclo hay retroalimentación negativa--.</li>
+								<li>En el testículo, la FSH actúa sobre las céllas de Sertoli aumentando la síntesis de la proteína ligadora de andrógenos (ABP), imprescindible para unirse a la testosterona, la cual inhibe al gen LHRH</li>
+								<li>El <b>FSH</b> se encuentra regulado negativamente por acción de factores que estimulados como la inhibina, que tiene un efecto de regulación negativa sobre las células gonadotropas
+									<div class="aside">Esto ocurre tanto en testículos como en ovarios</div></li>
+							</ul></li>
+						</ul>
+					</div>
+					<div class="flex_items">
+						<h5>Contro de las gónadas: LH</h5>
+						<ul>
+							<li>Hipotálamo: <b>gen LHRH</b></li>
+							<li>Adeohipófisis: <b>LH</b>: <ul>
+								<li>en el ovario estimula el <b>desarrollo de las células granulosas, a las células estromales y al cuerpo lúteo</b>. Sintetizan <b>progesterona</b>, que regula negativamente al <b>gen LHRH</b></li>
+								<li>En el testículo la LH actúa sobre las <b>células de Leydig</b>, que sintetizan <b>testosterona</b>, con una <b>retroalimentación negativa</b> sobre <b>LHRH</b>.</li>
+							</ul></li>
+						</ul>
+					</div>
+					<div class="flex_items">
+						<h5>Contro de la prolactina (PRL)</h5>
+						<li>La prolactina está siempre estimulada. Su liberación se ve inhibida por la dopamina, de manera que se sintetiza prolactina en ausencia de dopamina.</li>
+						<li>Estímulos como la succión del pezón, fármacos psicotrópicos e hipertiroidismo (aumento de TRH --recordemos que niveles fisiólógicos altos de esta hormona aumentan la liberación de prolactina--) inhiben la dopamina y desencadenan <abbr title="producción de leche cuando no hay embarazo">galactorrea</abbr>.</li>
+						<li>La prolactina estimula a los linfocitos y la liberación de citokinas, por lo que tiene cierto componente antiinflamatorio, y es muy importante en las embarazadas.</li>
+						<div class="aside">La producción de prolactina se ve modificada cuando se modifica la dopamina del hipotálamo. Esto se produce por fármacos psicotropos, que producen galactorrea. Por ejemplo, en el Parkinson, la prolactina no se ve afectada porque la dopamina alterada es la de la sustancia nigro-estriatal, y no la del núcleo parvocelular.</div>
+					</div>
+					<div class="aside"><b>CRH</b> estimula la síntesis de proopiomelanocortina, un precursor a partir del cual se produce ACTH, la hormona estimulante de los melanocitos (MSH) y endorfinas.</div>
+				</div>
+				<div>
+					<h3>Neurohipófisis</h3>
+					<p>A la neurohipófisis llegan neuronas del sistema magnocelular: ADH y oxitocina. En el transporte intervienen las <b>proteínas neurofisinas</b>.<br>
+						La neurofisina I se une a la oxitocina y al péotido señal; mientras que la neurofisina II se une a la ADH, al péotido señal y a un glicopéptido.<br>
+					Se almacenan en una especie de vesículas para darle más peso. Estas se desplazan por los microtúbulos y al llegar a la terminal axónica se secretan las neurofisinas junto con las hormonas.</p>
+					<div class="aside">Una alteración en la proteína de la neurofisina provoca una alteración en la cantidad de hormonas ADH y oxitocina</div>
+					<div class="flex_container">
+						<div class="flex_items">
+							<h5>Hormona antidiurética, ADH</h5>
+							<p>La ADH actúa a nivel de los <b>túbulos renales</b> activando la <b>reabsorción de agua</b>, y <b>regulando</b> por tanto la <b>presión osmótica</b></p>
+							<ol>
+								<li>Las altas presiones osmóticas estimulan a los osmorreceptores hipotalámicos</li>
+								<li>Los osmorreceptores activan a las células neurosecretoras del hipotálamo y liberan ADH</li>
+								<li>La ADH se libera desde los axones nerviosos a la corriente sanguínea</li>
+								<li>Los riñones retienen más agua, lo que reduce la cantidad de orina excretada; las glándulas sudoríparas disminuyen la pérdida de agua por la piel; la vasconstricción de las arteriolas aumenta la presión sanguínea</li>
+								<li>La baja presión osmótica de la sangre inhibe a los osmorreceptores hipotalámicos</li>
+								<li>La inhibición de los osmorreceptores reduce o detiene la secreción de ADH</li>
+							</ol>
+						</div>
+						<div class="flex_items">
+							<h5>Oxitocina</h5>
+							<p>A diferencia de lo que ocurre con la ADH, el estímulo para la oxitocina es extrínseco</p>
+							<ol>
+								<li>Esta hormona se libera en el parto para las contracciones del útero. El estímulo en este caso es la dilatación uterina, la cual estimula las fibras sensistivas que activan al sistema magnocelular</li>
+								<li>También se libera por estimulación vaginal durante el coito, siendo responsable de las contracciones musculares que se producen en el orgasmo femenino</li>
+								<li>La succión de la leche también estimula las fibras nerviosas sesnsitivas que llegan al sistema magnocelular; en este caso se produce por la contracción de los canalículos para la excreción de la leche</li>
+								<div class="aside">
+									<h5>Oxitocina VS Prolactina</h5>
+									&nbsp&nbsp&nbsp&nbspAmbas tienen como estímulo la succión del pezón, pero hay que tener en cuenta que la prolactina es necesaria para la producción de leche en los alveolos, mientras que la oxitocina es la responsable de la contracción de los canalículos para su excreción.<br>
+									Mecanismos de acción para estimular la contracción uterina durante el parto: la oxitocina estimula la síntesis de prostaglandina a partir del ácido araquidónico y abre los canales de Ca<sup>2+</sup> para que aumente a nivel intracelular
+								</div>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div>
+					<h3>Patología del eje hipotálamo-hipofisiario</h3>
+					<p>La patología del eje hipotálamo-hipofisiario suele ser tumoral, pudiendo causar:
+						<ul>
+							<li>Hiposecreción => hipofunción</li>
+							<li>Hipersecreción => hiperfunción</li>
+						</ul>
+						<aside>El <b>adenoma hipofisiario</b> es un tumor no canceroso que va a destruir poco a poco la hipófisis. La clínica es muy difusa, pudiendo confundirse con el propio envejecimiento. Por esto, hay que tener especial cuidado.<br>
+							Afecta primero a las <b>células gonadotropas</b>: disminución de la libido, pérdida de vello facial, amenorrea; lo siguiente que ocurre es hipotiroidismo: afecta a las células tirotropas, causando un hipotiroidismo (esto lleva mucho a confusión con la menopausia de las mujeres); luego empieza deficiencia de ACTH: afecta a las células corticotropas, disminuyendo los niveles de CSH (también se ve disminuido el MSH, expresado como palidez de la piel); por último, se produce panhipopitutarismo = déficit completo de hormonas hipofisiarias.</aside></p>
+					<div class="aside"><b>Síndrome de Sheehan</b>: se conoce como un panhipopituitarismo que resulta del <b>infarto de la glándula pituitaria</b> por shock hipovolémico o hemorragia severa durante el parto. Puede producir pérdida funcional tiroidea, adrenocortical, y gonadal.</div>
+					<h5>¿Qué otra causa produce hiposecreción hormonal? El envejecimineto endocrino</h5>
+					<p>El propio envejecimiento está asociado con una hiposecreción de todas las hormonas, excepto el cortisol, que aumenta tanto en hombres como en mujeres.<br>
+					Esta disminución de los niveles hormonales no se puede decir que sean patológicos.</p>
+					<p>Los radicales libres y la disminución de las defensas de nuestro organismo están relacionados con una aceleración del envejecimiento. La disminución de hormonas producen cierto aumento del nivel oxidativo. Nuestro cuerpo va a envejecer, pero nuestro cerebro puede mantenerse joven.<br>
+					El secreto para mantenerse joven se encuentra en mantener activa la actividad cerebral (plasticidad neuronal) junto con los hábitos de vida saludable --fisiológicamente seguirmeos envejeciendo, pero el cerebro se puede mantener joven.</p>
+					<div class="aside">Rita Levi-Montalcini</div>
+				</div>
+			</div>
+			<div id="foot-container" class="body-containers">
+				<div>
+					<p>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	
+	{% endblock %}
+	{% block java %}
+	<script type="text/javascript">
+		var x = document.getElementById("indice")
+		var y = document.getElementById("glosario")
+		var z = document.getElementById("btn")
+		var w = document.getElementById("key_words")
+		
+		function indice(){
+			x.style.left="0px";
+			y.style.left="450px";
+			z.style.left="-8px";
+			w.style.left="900px";
+		}
+		function glosario(){
+			x.style.left="-400px";
+			y.style.left="0px";
+			z.style.left="60px";
+			w.style.left="450px";
+		}
+		function key_words(){
+			x.style.left="-800px";
+			y.style.left="-400px";
+			z.style.left="140px";
+			w.style.left="0px";
+		}
+	</script>
+	{% endblock %}
+	
+	{% block footer %}
+	{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+    {% block link %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profile_card.css') }}">
+    {% endblock %}
+
+    {% block nav %}
+    <li class="button-box">
+		<div id="btn"></div>
+		{% for asignatura in asignaturas %}
+			<button type="button" id="btn_{{asignatura}}" class = "toggle-btn">{{asignatura.title()}}</button>
+		{% endfor %}
+	</li>
+    {% endblock %}
+
+	{% block content %}
+	<div class="whole_container">
+		{% for asignatura in asignaturas %}
+		<div id="{{asignatura}}" class="container">
+			<div class="all-container">
+			{% for file_name in filename %}
+			{% if file_name[1] == asignatura %}
+			
+				<div class="main-container {{ asignatura }}">
+					<div class="icons">
+						<ul>
+							<li class="li_object">
+								<a><i class="fas fa-graduation-cap"></i></a>
+							</li>
+							<li class="li_object">
+								<a href="/temas/{{ asignatura }}/{{ file_name[0] }}" target="_blank"><i class="fas fa-sign-in-alt" aria-hidden="true"></i></a>
+							</li>
+							<li class="li_object">
+								<a><i id="batery"class="bateria fas fa-battery-empty" aria-hidden="true"></i></a>
+								<!-- <i class="fas fa-battery-empty"></i> -->
+								<!--<i class="fas fa-battery-three-quarters"></i>-->
+								<!--<i class="fas fa-battery-full"></i>-->
+							</li>
+						</ul>
+					</div>
+					<div class="layer">
+						<div class="dificultad" id="gray"></div>
+						<div class="text" id="{{file_name[0]}}">
+							<h4><b>{{ file_name[0].replace(".html","").title() }}</b></h4>
+							<p>{{ asignatura.title() }}</p>
+							<p>Last study: <b><a class="fecha">never</a></b></p>
+						</div>
+					</div>
+				</div>
+			{% endif %}
+			{% endfor %}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	
+	{% endblock %}
+	{% block jslink %}
+	<script src="{{ url_for('static', filename='js/profile_card.js') }}"></script>
+	{% endblock %}
+

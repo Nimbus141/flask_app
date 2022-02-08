@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/temas_base2.css') }}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6c1da3acad.js" crossorigin="anonymous"></script>
+	{% block csslink %}
+	
+	{% endblock %}
+
+	{%block title %}
+	
+	{% endblock %}
+</head>
+<body>
+	<div class="whole_container">
+		<nav class="nav">
+			<div class="nav_responsive-ul">
+				<div class="nav_responsive-button-container">
+				</div>
+				<div class="nav_li-container">
+					<div class="indice_text">
+						<b>ÍNDICE</b>
+					</div>
+					<div id="indice">
+						<div id="menu">
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main_container">
+			<div id="center_container">
+
+				<button id="left_btn" class="aside_btn"><i class="fas fa-chevron-left"></i></button>
+				<button id="right_btn" class="aside_btn"><i class="fas fa-chevron-right"></i></button>
+
+				<div class="body-containers" id="header">
+					{% block header %}
+	
+					{% endblock %}
+				</div>
+
+				<div class="body-containers" id="body">
+					{% block body %}
+	
+					{% endblock %}
+				</div>
+
+				<div class="body-containers" id="footer">
+					{% block footer %}
+	
+					{% endblock %}
+				</div>
+
+				<input value="{{file}}" id="info_tema_actual" class="python_info"></input>
+				<input value="{{numero_temas}}" id="numero_temas" class="python_info">
+				<input value="{{asignatura}}" id="asignatura" class="python_info">
+				{% for file_name in nombre_temas %}
+				<input value="{{file_name}}" class="nombres_tema python_info">
+				{% endfor %}
+				{% for file_name in filename %}
+				<input value="{{file_name}}" class="url_tema python_info">
+				{% endfor %}
+
+			<div class="aside_containers">
+				<div class="aside_contas" id="left_container">
+					<div class="aside_text">
+						Left container
+					</div>
+				</div>
+
+				<div class="aside_contas" id="right_container">
+					<div class="aside_text">
+						Right container
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<script src="{{ url_for('static', filename='js/temas_base.js') }}"></script>
+	{% block jslink %}
+	{% endblock %}
+</body>
+</html>

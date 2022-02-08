@@ -1,0 +1,283 @@
+{% extends "temas/base2.html" %}
+
+	{% block title %}Tema 1 - fisio{% endblock %}
+
+{% block indice %}
+<li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">Tema 1</label>
+	<ul class="interior">
+		<li><a href="#a000">Introducción</a></li>
+    	<li><a href="#a001">Evolución de la endocrinología</a></li>
+    	<li><a href="#a002">Organización del SE</a></li>
+    	<li><a href="#a003">¿Qué es una hormona? Cronobiología y cronodisrupción</a></li>
+    	<li><a href="#a004">Progeria y diferencias entre el cerebro de hombre y mujer</a></li>
+    	<li><a href="#a005">¿Cómo varían los niveles hormonales?</a></li>
+    	<li><a href="#a006">Síndrome de West</a></li>
+    	<li><a href="#a006">Síndrome de West</a></li>
+    	<li><a href="#a006">Síndrome de West</a></li>
+	</ul>
+</li>
+<li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">Tema 2</label>
+	<ul class="interior">
+		<li><a href="#r">Nivel 2</a></li>
+		<li><input type="checkbox" name="list" id="nivel2-3"><label for="nivel2-3">Nivel 2</label>
+			<ul class="interior">
+				<li><a href="#r">Nivel 3</a></li>
+				<li><a href="#r">Nivel 3</a></li>
+			</ul>
+		</li>
+	</ul>
+</li>
+{% endblock %}
+
+		{% block content %}
+		<div class="main-div">
+			<div id="intro-container" class="body-containers">
+				<h1><strong>Tema 1: organización del sistema endocrino. Sistemas de acción hormonal</strong></h1>
+				<div>
+					<div class="aside" id="#a000">
+						<h5>Premios Nóbel</h5>
+						<ul>
+							<li>Premio Nobel 2018: James Allison y Tasuku Honjo por descubrir que podemos usar el sistema inmune contra el cáncer –<b>inmunoterapia</b>.</li>
+							<li>Premio Nobel de 2019: William Kaelin, Peter Ratcliffe y Gregg Semenza: descubrieron como las células se adapatan a la cantidad de oxígeno.</li>
+							<li>Premio Nobel 2020: por el descubrimiento del virus de la hepatitis C</li>
+						</ul>
+					</div>
+					<p>La <b>fisiología general</b> se ocupa de estudiar los procesos que <b>de forma dinámica</b> permiten el <b>cambio/adaptación</b> del organismo de un estado a otro, dentro de la normalidad y en un momento determinado.</p>
+					<p>La <b>endocrinología</b> es una parte de la fisiología que se encarga de los sistemas de <b>comunicación</b> y <b>transferencia de info</b>. (comunicación química intercelular).</p>
+					<p>La <b>fisiopatología</b> estudia cuando se altera la normalidad</p>
+					<blockquote>“Hay que aprender a diferenciar lo que es normal de lo que no es normal”</blockquote>
+					<div class="aside">El otro gran sistema de comunicación es el <b>SN</b>
+					</div>
+					<div>
+						<h5  id="#a001">Evolución de la endocrinología</h5>
+						<dl>
+							<dt>Berthold...</dt>
+							<dd>...castró un gallo, y vió como estos perdían su agresividad, desaparecía se cresta de gallo y perdían su interés por la gallina. Al reimplatar un testículo, volvían a recuperar la agresividad.<br>
+							<b>Conclusión:</b> hay una sustancia en la sangre que afecta a su aspecto</dd>
+							<dt>Charles Brown-Sequard...</dt>
+							<dd>...autoexperimentó con extractos de testículos de cobaya y de perro: experimentó un <b>aumento de fuerza y capacidades intelectuales</b>. Esto determinó una línea de investigación para curar otras muchas patologías: diabetes, Addison, tuberculosis...</dd>
+							<dt>Oskar Zoth y Fritz Pregl...</dt>
+							<dd>...consiguen aislar la testosterona de extractos de toro, y al inyectarlo en atletas, estos mejoran su rendimiento.</dd>
+							<dt>William Bayliss y Eh Starling...</dt>
+							<dd>...descubrieron la existencia de mensajeros químicos; aislaro la secretina(primera hormona). 
+								<div class="aside"><small><b>Laboratorio de Bayliss</b>: la vivisección de un perro produjo controversia sobre los derechos de los animales.</small></div></dd>
+							<dt>Butenandt...</dt>
+							<dd>...aisla la primera hormona sexual: estrona, androsterona.</dd>
+							<dt>Leo stanley...</dt>
+							<dd>...transplanta testículos de prisioneros ejecitados a prisioneros impotentes; luego los sustituyó por testículos de animales.</dd>
+							<dt>Karoly david...</dt>
+							<dd>...dan nombre a la testosterona.</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div id="body-container" class="body-containers">
+				<div>
+					<ol><h3  id="#a002">Organización del sistema endocrino:</h3>
+						<li>Mantiene la <b>homeostasis</b> interna</li>
+						<li>Permite el <b>crecimiento celular</b></li>
+						<li>Coordina el <b>desarrollo</b></li>
+						<li>Facilita la <b>respuesta a estímulos externos</b></li>
+						<li>Coordina la <b>reproduccion</b></li>
+						<div class="aside">Es decir, el sistema endocrino nos permite la <b>supervivencia</b>.</div>
+					</ol>
+					<h5><small><strong>Las hormonas actúan a 3 niveles: molecular, celular, global.</strong></small></h5>
+				</div>
+				<div>
+					<ol><h5>Elementos</h5>
+						<li><b>Emisor</b>: célula endocrina –la que produce la hormona, pudiendo formar parte de un órgano endocrino, o no.</li>
+						<li><b>Señal</b>: hormona.</li>
+						<li><b>Medio</b>: plasma y transportadores hormonales.</li>
+						<li><b>Receptor</b>: proteína receptora --no todas las hormonas tienen receptor.</li>
+						<li><b>Transductor</b>: proteínas transductoras(transforman la info para que la entienda la célula) y segundos mensajeros (también son amplificadores)</li>
+						<li><b>Mensajeros</b>: son amplificadores.</li>
+						<li><b>Amplificador</b>: transductor y enzimas efectoras.</li>
+						<li><b>Efector</b>: proteínas efectoras.</li>
+						<li><b>respuesta</b>: respuesta celular.</li>
+					</ol>
+				</div>
+				<div>
+					<ol><h5  id="#a003">¿Qué es una hormona?</h5>
+						<p> Una <b>hormona</b> es una <b>molécula</b> qe funciona como un <b>mensajero</b> dentro del organismo y cuya única función es <b>transportar información</b></p>
+						<ul>
+							<li>Actúan a <b>concentraciones muy pequeñas</b> (de microgramos a picomoles), porque se amplifica mucho su efecto.</li>
+							<li>son <b>mensajero químicos</b></li>
+							<li>Varios tipos: derivados de aa, esteroides, péptidos, proteínas, etc...</li>
+							<li>Permiten el crecimiento, determinan el nivel de fuerza muscular, control de apetito, salud de huesos con el metabolismo del calcio...</li>
+						</ul>
+						<br>
+						<ul><strong>Las hormonas se transportan en sangre:</strong>
+							<li><b>Hor. proteicas</b>: van solubles en plasma</li>
+							<li><b>Aa</b>: van solubles en plasma, pero unidas a proteínas transportadoras</li>
+							<li><b>Hor. gaseosas</b>: en solución en el plasma; unidas a prot transportadoras</li>
+							<li><b>Esteroideas</b>: unidas a transportadores proteicos</li>
+							<div class="aside">Todas las hormonas esteroideas necesitan un transportador, mientras que las proteicas pueden transportarse en plasma</div>
+						</ul>
+					<div>
+						<p>Los niveles de una hormonas, de su receptor, transductor y/o efector <b>no son fijos</b>, sino que varían dentro de un <b>rango</b>: con el tiempo; con el desarrollo; con el sexo; con el estado de salud. <br>
+						<p>Dependen de su <b>transportador y metabolismo periférico</b><br></p><b>Las hormonas tienen funciones diferentes en función de su concentracion, y están sometidas a ciclos</b> (ejemplo del ciclo ovárico).<br>
+							<blockquote>Hay una hormona que no baja con la edad, sino que sube: <b>cortisol</b>, la hormona del estrés.</blockquote>
+						</p>
+					</div>
+					<div class="aside"  id="#a004">
+						<dl>
+							<dt>Progeria, conocida como Síndrome de Hutchinson-Gilford...</dt>
+							<dd>... es un <b>trastorno genético progresivo</b> que consiste en la mutación de un gen que afecta a una proteína –<b>lámina</b>, que se transforma en progerina-- que hace que las <b>células se desunan</b>, produciendo un <b>envejecimiento acelerado</b>. La inteligencia  y el cerebro no se ven afectados. Estos niños suelen morir a los 13 años.</dd>
+							<dt>El cerebro de hombre y mujer es distinto...</dt>
+							<dd>...no tanto a nivel morfológico, sino <b>a nivel de conexiones interneurales</b>, en las que a su vez influyen determinantemente las hormonas --ambos sexos se encuentran en un entorno hormonal diferente.</dd>
+						</dl>
+					</div>
+					<div>
+						<p>Una célula puede producir y responder a varias hormonas –incluso de diferente clase química--; además, puede recibir señales de distintas hormonas, integrarlas, y dar una única respuesta. </p>
+						<blockquote><b>Ejemplos</b>: cel de la granulosa del ovario: sintetizan inhibina, estradiol y androstediona durante la fase folicular. Al mismo tiempo, responden a FSH y factores de crecimiento, estradiol, etc. <b>Otro ejemplo</b> es la hipófisis anterior.</blockquote>
+						<div class="aside">
+							<strong>Un órgano endocrino => múltiples hormonas<br>
+							Una hormona => múltiples receptores<br>
+							Un receptor => múltiples respuestas</strong>
+						</div>
+						<br>
+						<br>
+						<h5  id="#a005">¿Cómo varían los niveles hormonales?</h5>
+						<p>Aumentan y descienden debido a la <b>síntesis y degradación</b> de la hormona. La cantidad de hormona que se une al receptor es sólo una pequeña parte del total producido.<br><br>
+						Además, los <b>niveles de receptores, transductores y efectores</b> tambien cambian.<br><br>
+						Estos <b>cambios</b> están <b>en función de la hora del día, del sexo, edad, y estado de desarrollo</b>. También varían en función del tejido, lo que está a su vez en relación con la <b>senisibilidad hormonal</b> de cada uno.</p>	
+					</div>
+					<div>
+						<p><b>Claude Bernard: </b> “la constancia del medio interno"; introdujo el concepto de homeostasia, según el cual Los <b>procesos fisiológicos</b> se ven <b>afectados</b> por una gran variedad de <b>estímulos</b> tanto de origen <b>intrínseco</b> como <b>extrínseco</b>.</p>
+						<p>Esta idea está un poco absoleta: si me voy al polo norte, no aumentan los niveles de hormonas esteroides, porq se encuentran reguladas por el <b>ritmo cronobiológico</b>. Ante determinados estímulos puede aumentar la síntesis y el número de hormonas que entra en la célula, pero su concentración <b>no</b> aumenta en plasma y permanece en un rango normal: <b>los niveles en plasma se mantienen constantes, con la variación rítmica del medio interno</b>.</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Cronobiología:</b> la <b>variación rítmica</b> del medio interno. Todas las hormonas se encuentran reguladas por el <b>reloj biológico</b>, y la <b>alteración</b> de esos ritmos es lo que produce la <b>patología</b> –y no la variación del medio externo..</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Cronodisrupción:</b> las alteraciones del ritmo natural del organismo son causa importante de patologías --la luz es un ejemplo claro--. En la cronodisrupción interviene la <b>capacidad adaptativa</b> de la persona –no es lo mismo ser joven que mayor. </p>
+						<div class="aside" id="#a006">
+							<dl>
+								<dt>Síndrome de West (encefalopatía epiléptica congénita):</dt>
+								<dd>en esta enfermedad, el pico de melatonina que se suele dar entre las 2-3 de la madrugada se encuentra alterado.</dd>
+							</dl>
+							<blockquote>Esto es un ejemplo de como se pueden controlar ciertas patologías regulando la cronología hormonal.</blockquote>
+						</div>
+					</div>
+					<div>
+						<ul><h5 id="#a007">Concepto de receptor</h5>
+							<li>Son estructuras capaces de <b>reconocer específicamente</b> a las hormonas</li>
+							<li>Establecen una <b>unión hormona-receptor</b></li>
+							<li>Con la union, se pone en marcha la <b>respuesta intracelular específica</b> a <b>nivel molecular</b>, que constituye la <b>auténtica acción hormonal</b>.</li>
+							<li>Hay hormonas que tienen efectos no mediados por receptor</li>
+							<li>La insulina es un ejemplo de hormona que tiene diferentes funciones y que actúa sobre células diferentes mediante su unión a diferentes tipos de receptores</li>
+							<div class="aside"><b>Insulina:</b> entrada de glucosa en células: gltu-4; a nivel hepático: glut-2, y regula la síntesis de ácidos grasos. </div>
+						</ul>
+						<p>En esta misma línea, los <b>receptores hormonales</b>son proteínas que se unen con <b>alta afinidad</b> a las hormonas, produciendo una <b>alteración en la conformación y función</b>.
+							<br><br>
+						Existe un <b>número finito</b> de ellos; la <b>unión es reversible</b> --ya que el <b>efecto tiene que ser temporal</b>--; y la unión hormona-receptor altera otras proteínas celulares y puede <b>activar</b> determinados <b>enzimas</b>.
+						</p>
+						<br>
+						<dl><h5>Tipos de receptores hormonales</h5>
+							<dt>Receptores de membrana...</dt>
+							<dd>...proteínas integrales o glicoproteínas embebidas; sus <b>efectores</b> son <b>proteína y hormonas polares</b> (péptidos y neurotransmisores). <br><br>
+								<ol>Se distinguen <b>3 grupos</b> principales de rec de membrana:
+									<li><b>Prot G</b>: con 7dominios transmembrana</li>
+									<li><b>Factores de crecimiento/citoquinas</b> --con un solo dominio transmembrana.</li>
+									<li><b>Canales iónicos</b></li>
+								</ol></dd>
+							<dt>Receptores nucleares...</dt>
+							<dd>...proteínas nucleares que generalmente actúan en pares y se unen a elementos de respuesta específicos en el DNA = secuencias de DNA en la <b>región del promotor del gen diana</b>. Sus efectores son <b>moléculas pequeñas y lipofílicas</b> (esteroides y hormonas tiroideas).</dd>
+							<dt>Receptores citosólicos...</dt>
+							<dd>...son receptores solubles (proteínas) que regulan procesos de fosfoliración y/o enzimas.
+								<div class="aside">Ej.:
+									<ul>
+										<li><b>Calmodulina</b>: regula 22 enzimas</li>
+										<li><b>Calreticulina</b>: movilización de receptores nucleares</li>
+									</ul>
+								</div>
+							<dt>Receptores mitocondriales...</dt>
+							<dd><b>...proteínas de la matriz:</b> regulan <b>mtDNA</b>; prot ligadas a la <b>mb interna</b> (como las tiroideas que regulan la <b>UCP</b> --termogénesis--).</dd>
+							</dd>
+						</dl>
+					</div>
+					<div>
+						<ul><h5>¿Qué son los transductores hormonales?</h5>
+							<li>Son <b>proteínas</b> que <b>convierten la información</b> de la señales hormonales en señales químicas comprensibles pata la maquinaria celular (traduce la info que que lleva la hormona en una info que entienda la célula).</li>
+							<li><b>Cambian su forma y actividad</b> cuando interaccionan con los <b>complejos receptor-hormona</b> (se encuentran inactivas y luego se activan)</li>
+							<li>Generalmente son <b>enzimas o proteínas unidas a nucleótidos</b> que producen <b>segundos mensajeros</b>, o <B>cambian la actividad de otras proteínas</B> por modificación covalente(añadiendo o eliminando residuos como el fosfato)<br>
+								<blockquote>El segundo mensajero es una molécula producida en gran cantidad que actúa como intermediario de la cadena de amplificación activando a otros componentes para desencadenar la respuesta celular.</blockquote></li>
+							<li><b>Amplifican</b> la señal original de la hormona</li>
+							<div class="aside">Un transductor es una proteína o enzima inactiva que como consecuencia de la unión hormona-receptor se activa y a su vez activa una cascada de reacciones para finalmenet producir una respuesta celular. <b>El transductor no es un efector ni un receptor: activa la cascada de amplificación.</b></div>
+						</ul>
+						<dl>Clases de transductores
+							<dt>Proteína G - activación de la adenilato ciclasa</dt>
+							<dd>La proteína G que actúa como transductor origina una cascda de reacciones hasta que se produce la respuesta celular mediante cambios bioquímicos o genéticos.</dd>
+							<dt>Proteína G - Fosfolipasa C</dt>
+							<dd>formación de IP3 y DAG</dd>
+							<dt>Esteroides</dt>
+							<dd>Actúan a <b>nivel nuclear</b>, induciendo la expresión de genes --no hay intermediarios de por medio. Es decir, entran directamente, se unen a un receptor nuclear que actúa como transductor y amplifica la señal.</dd>
+						</dl>
+						<blockquote>Hay unos transductores que pueden formar parte del propio receptor: los <b>receptores tirosín-kinasa.</b><br>
+							<p>El receptor tiene un <b>dominio extracelular</b>: se une el receptor; y otro <b>intracelular</b>: encontramos la enzima tirosin-quinasa y el resto de tirosina.</p><br>
+							<p>Cuando la hormona se une al receptor,  ocurre un cambio de conformación y la tirosín kinasa se activa para fosfolirar los restos de tirosina, que a su vez reclutan proteínas inactivas en el citosol como el <b>GRB2 --sería segundo mensajero</b>, que inicia una cascada de transducción que acaba con la <b>transcripción de genes</b> como resultado celular final.</p><br>
+							<p>También puede reclutar a la <b>fosfolipasa C</b> o al <b>factor de transcripción JAK</b>, que activa a STAT.</p>
+							<div class="aside">Los receptores tirosín-kinasa se unen a hormonar como EGF-R, insulina, factores de crecimiento derivados de plaquetas, etc.<br>
+							Estos receptores están muy presentes en los tumores, y se está orientando mucha terapia antitumoral hacia ellos --inmunoterapia.</div>
+						</blockquote>
+					</div>
+					<div><p>En muchas <b>enfermedades de resistencia a los fármacos</b>, es por defectos en la vía de señalización de las vías intracelulares. Debido a esto, se produce <b>síndrome de resistencia hormonal</b>.<br>Un ejemplo es la <b>hormona GH</b>, la cual puede estar en concentraciones normales, pero si las células no responden el sujeto no crece.</p></div>
+					<div class="aside">"Una hormona no ejerce su efecto directamente, sino mediante una serie de receptores intracelulares"</div>
+				</div>
+				<div>
+					<ul><h5>Regulación hormonal</h5>
+						<li>Regulación autocrina</li>
+						<li>Regulación paracrina</li>
+						<li>Regulación endocrina</li>
+						<li>Regulación neurocrina</li>
+					</ul>
+					<dl><h5>Almacenamiento y secreción hormonal</h5>
+						<dt>Hormonas derivadas de aa, polipéptidos y proteínas</dt>
+						<dd>se almacenan en gránulos densos y en vesículas</dd>
+						<dt>Esteroides y gases</dt>
+						<dd><b>no</b> se almacenan</dd>
+						<div class="aside">"Los esteroides se sintetizan conforme se necesitan</div>
+					</dl>
+					<ul><h5>Sistemas de regulación</h5>
+						<li><b>Regulación positiva:</b> estrógenos durante el ciclo menstrual; contracciones durante el parto; coagulación de la sangre.</li>
+						<li><b>Regulación negativa:</b> Tª corporal; pH en sangre; presión sanguínea; hormonas tiroideas.</li>
+					</ul>
+
+				</div>
+			</div>
+			<div id="foot-container" class="body-containers">
+				<div>
+					<p>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	
+	{% endblock %}
+	{% block java %}
+	<script type="text/javascript">
+		var x = document.getElementById("indice")
+		var y = document.getElementById("glosario")
+		var z = document.getElementById("btn")
+		var w = document.getElementById("key_words")
+		
+		function indice(){
+			x.style.left="0px";
+			y.style.left="450px";
+			z.style.left="-8px";
+			w.style.left="900px";
+		}
+		function glosario(){
+			x.style.left="-400px";
+			y.style.left="0px";
+			z.style.left="60px";
+			w.style.left="450px";
+		}
+		function key_words(){
+			x.style.left="-800px";
+			y.style.left="-400px";
+			z.style.left="140px";
+			w.style.left="0px";
+		}
+	</script>
+	{% endblock %}
+	
+	{% block footer %}
+	{% endblock %}

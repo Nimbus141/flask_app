@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aprendiendo css</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Lexend+Mega&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/base.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">
+	{% block link %}
+    {% endblock %}
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<script src="https://kit.fontawesome.com/6c1da3acad.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<ul class="nav_ul">
+				<li class="nav_li"><i class="fas fa-user"></i>Hola {{ name }}</li>
+				<li class="nav_li"><i class="fas fa-house-user"></i><a href="/user/Pablo">Inicio</a></li>
+				<li class="nav_li"><i class="fas fa-brain"></i><a href="/profile_card">Temas</a></li>
+				<li class="nav_li"><i class="fas fa-dna"></i><a href="/modelo_tema">Modelo de tema</a></li>
+				<li class="nav_li"><i class="fas fa-lungs"></i><a href="/">Sign In</a></li>
+				{% block nav %}
+				{% endblock %}
+			</ul>
+			<ul class="nav_responsive-ul">
+				<div class="nav_responsive-button-container">
+					<div class="nav_responsive-button fas fa-bars"></div>
+				</div>
+				<div class="nav_li-container">
+					<li class="nav_responsive-li"><i class="fas fa-user"></i>Hola</li>
+					<li class="nav_responsive-li"><i class="fas fa-house-user"></i><a href="#"></a>Inicio</li>
+					<li class="nav_responsive-li"><i class="fas fa-brain"></i><a href="/linea_temporal">Línea del tiempo</a></li>
+					<li class="nav_responsive-li"><i class="fas fa-dna"></i><a href="#"></a>Gana dinero</li>
+					<li class="nav_responsive-li"><i class="fas fa-heart"></i><a href="#"></a>Ayudas</li>
+					<li class="nav_responsive-li"><i class="fas fa-lungs"></i><a href="#"></a>Sign In</li>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	{% block content %}
+	{% endblock %}
+
+	{% block jslink %}
+	{% endblock %}
+</body>
+</html>

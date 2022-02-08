@@ -1,0 +1,110 @@
+{% extends "temas/base2.html" %}
+
+	{% block title %}Tema 3 - bases{% endblock %}
+
+{% block indice %}
+<li><input type="checkbox" name="list" id="nivel1-1"><label for="nivel1-1">Tema 1</label>
+	<ul class="interior">
+		<li><a href="#a000">Introducción</a></li>
+    	<li><a href="#a001">Dolor de origen gastrointestinal</a></li>
+    	<li><a href="#a002">Causas neumológicas</a></li>
+    	<li><a href="#a003">Dolor de origen cardiovascular</a></li>
+    	<li><a href="#a004">Causas neuromusculares</a></li>
+    	<li><a href="#a005">Causas psicosomáticas</a></li>
+    	<li><a href="#a006">Extras</a></li>
+	</ul>
+</li>
+<li><input type="checkbox" name="list" id="nivel1-2" checked=""><label for="nivel1-2">Tema 2</label>
+	<ul class="interior">
+		<li><a href="#r">Nivel 2</a></li>
+		<li><input type="checkbox" name="list" id="nivel2-3"><label for="nivel2-3">Nivel 2</label>
+			<ul class="interior">
+				<li><a href="#r">Nivel 3</a></li>
+				<li><a href="#r">Nivel 3</a></li>
+			</ul>
+		</li>
+	</ul>
+</li>
+{% endblock %}
+		{% block content %}
+		<div class="main-div">
+			<div id="intro-container" class="body-containers">
+				<h1><strong>Tema 4: Eje neuroendocrino</strong></h1>
+				<div>
+					<p>La tiroides produce poca T3 y mucha T4, que se transforma en los tejidos periféricos en T3. Dos restos de tirosina se unen fromando un núcleo de tironina. Este núcleo, unido al yodo, son la condición indispensable para que haya hormonas tiroideas. La T4 tiene 4 restos de yodo --tiroxina--; y se transforma en T3 cuando pierde un átomo. Estas hormonas se sintetizan en los folículos tiroideos, siendo los componentes funcionales. Rodean al coloide, y están rodeados por membrana basal --por fuera-- y mb apical --mirando al coloide--. En el interior del coloide se sintetiza la hormona tiroidea. El coloide es un 90% tiroglobulina y un 10% mucopolisacáridos. <br>
+						Los restos de tiroglobulina tienen alrededor de 70 moléculas de aa de tirosina. A partir de esta tiroglobulina, se sintetizan las hormonas tiroideas. La proteína llega al coloide por exocitosis. <br>
+						Cuando los folículos se estimulan --por la hormona TSH--, se produce un ensanchamiento de la célula, y como consecuencia se contrae el coloide, provocando que su material interno tienda a salir, agrupándose en vesículas. Estas gotículas llevan restos de tiroglobulina, los cuales se hidrolizan y salen por el lado de l amb basal en forma de T$.
+						<div class="aside">Una estimulación crónica provoca lo que se conoce como bocio. Posible causa: adenoma hipersecretor de TSH. El bocio se produce por exceso de TSH, por lo que puede darse tanto en hiper como en hipotiroidismo.</div>
+					El tiroides también es fundamental para regular el Ca<sup>2+</sup>, ya que encontramos a las células parafoliculares que secretan la calcitonina.<br>
+					Hay que tomar yodo. Alrededor de 500 microgramos al día. Antiguamente, Granada era una zona endémica de bocio, porque se tomaba poco pescado. La glándula de tiroides almacena 8000 microgramos de yodo --es un almacén--. De los 500 microgramos que hemos tomado, se eliminan unos 488, y se almacenan 12. El punto está en que capta 120, devuelve 60, pero esas cantidades varían en función de la ingesta diaria. 
+					<div class="aside">En una fuga radiactiva, se dan pastillas de yodo a la población, para que se sature de yodo normal, y no capte el yodo radiactivo.</div>
+					El yodo pasa a nivel intestinal a youdro y se absorbe. En el coloide, va a tener que entrar en contra de gradiente de concentración y en contra de gradiente eléctrico. Por esto, hay una bomba de yoduro, que lo va introduciendo dentro del coloide. Aquí la tiglobulina se yoda, y se forma la hormona. <br>
+					Para que haya síntesis de hormonas tiroideas, tiene que haber yodo. Este va a entrar en contra de gradientes. Por lo que hace falta un transportador y energía. El transportador se llama NIS, que mete el yoduro, también mete Na<sup>+</sup>. A su vez, está unido a una ATPasa, y funciona en correlación con un abomba NA/K, la cual saca el Na que entra junto al yodo. Una vez que está dentro de la célula, sale por la membrana apicl por medio de un transportador pasivo, denominado Pendrina.<br>
+					El siguiente paso es la oxidación del yoduro, que tienen que pasar a yodo molecular, y de ahí unirse a la tiroglobulina. En la oxidación participa una peroxidasa. Esta forma peróxido de hidrógeno, y para esto hace falta NADPH, conla NADPHoxidasa. <br>
+					Por tanto, hace falta que haya una gran actividad del ciclo de las pentosas fosfato para que haya NADPH, que se va a transformar en NADP por la NADPHoxidasa. Y este a su vez va a ser utilizado por la peroxidasa.<br>
+					El siguiente paso es la oxidación: como hay exceso de yodo, se forma más T4 que T3, ya que se yoda todo. En un hipotiroidismo, se puede formar más T3 que T4.  
+				</div>
+				<div>
+					<blockquote>El 99.5% de las hormonas tiroideas están unidas a proteínas transportadoras --ver cap--. La más importante, y la que de verdad regula la concentración, es la TBG. Para que la T4 pase a T3, se tiene que liberar de la prteína plasmática. <br>
+						A los 2/3 días, la actividad aumenta de manera progresiva, y alcanza su máximo en 10-12 días, para comenzar a descender lentamente.<br>
+						Parte de su actividad persiste entre 6 y 12 meses. <br>
+					Las acciones de T3 tienen lugar con una rapidez 3 veces mayores. El periodo de latencia se acorta a 6-12h.</blockquote>
+					<h5>¿Cual es la importancia de la porteína de unión?</h5>
+					<p>Si son solubles en la concentración en la que se encuentran en plasma, ¿para que requerimos de esta hormona? <br>
+						La T3 y la T4 no son hidrosoluble, pero a la concentración a la que están si son solubles. Teóricamente no necesitarían proteínas transportadoras, pero si la T4 estuviese libre se eliminaría por orina. Este es un mecanismo que impide la pérdida de T4 por orina.<br>
+					La hormona activa es la T3</p>
+					<p>Independientemente de que la producción de hormonas tiroideas sea alta o baja en un momento determinado, los niveles plasmáticos se mantienen normales. Esto es porque, a pesar de aumentar la producción de hormonas tiroideas, la T4 se une a la TBG inmediatamente, y se va liberando lo que haga falta.</p>
+					<p>Va a haber un equilibrio entre la T4 libre y los niveles de TBG, siendo las proporciones <b>inversamente proporcionales</b>: cuando la TBG baja, la T4 aumena, y viceversa.</p>
+					<p>En un síndrome nefrótico, salen proteínas por la orina, luego descienden los niveles de TBG, y para compensar el equilibrio, la T4 libre aumenta. <br>
+					En una insuficiencia hepática, la T4 libre aumentaría porque la síntesis de TBG disminuye. Al aumentar la T4, la TSH disminuye por retroalimentación negativa.</p>
+					<div class="aside">En un hipotiroidismo aumenta mucho el colesterol</div>
+				</div>
+				<div>
+					<p>Si la T4 no pasa a T3 por un defecto en la desyodasa, hay que tratar al paciente con T3. Sin embargo, esto puede provocar muchos efectos adversos.</p>
+				</div>
+				<div>
+					<p>Las hormonas tiroideas son permisivas para la acción de otras hormonas, como la GH.</p>
+				</div>
+			</div>
+			<div id="body-container" class="body-containers">
+			</div>
+			<div id="foot-container" class="body-containers">
+				<div>
+					<p>
+
+					</p>
+				</div>
+			</div>
+		</div>
+	
+	{% endblock %}
+	{% block java %}
+	<script type="text/javascript">
+		var x = document.getElementById("indice")
+		var y = document.getElementById("glosario")
+		var z = document.getElementById("btn")
+		var w = document.getElementById("key_words")
+		
+		function indice(){
+			x.style.left="0px";
+			y.style.left="450px";
+			z.style.left="-8px";
+			w.style.left="900px";
+		}
+		function glosario(){
+			x.style.left="-400px";
+			y.style.left="0px";
+			z.style.left="60px";
+			w.style.left="450px";
+		}
+		function key_words(){
+			x.style.left="-800px";
+			y.style.left="-400px";
+			z.style.left="140px";
+			w.style.left="0px";
+		}
+	</script>
+	{% endblock %}
+	
+	{% block footer %}
+	{% endblock %}
